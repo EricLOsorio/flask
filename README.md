@@ -4,7 +4,7 @@
 
 
 ###What to use Flask for and when to use it.
-Flask is an all-purpose *microframework* for Python based on Werkzeug and Jinja2. It is ideally suited for Python developers looking for an easily extensible framework to quickly create smaller apps. However, with some effort it can also accomodate the requirements of [larger projects](https://github.com/mitsuhiko/flask/wiki/Large-app-how-to). Flask has great unofficial and official documentation and an active development community. 
+Flask is an all-purpose *microframework* for Python based on Werkzeug and Jinja2. It is ideally suited for Python developers looking for an easily extensible framework to quickly create smaller apps. For example, creating a quick sign up page where users can sign up to receive an app you're building or to start building a potential client database for marketing your new blog. However, with some effort it can also accomodate the requirements of [larger projects](https://github.com/mitsuhiko/flask/wiki/Large-app-how-to). Flask has great unofficial and official documentation and an active development community. 
 
 ######Unique aspects 
 
@@ -12,9 +12,9 @@ Flask has several unique aspects which sets it apart from more tightly integrate
 
 For instance, Flask does not force developers to use particular tools or libraries, nor does it have built-in components where third-party libraries provide common functions. Instead, Flask is easily extensible to add extra functionality. If a desired extension [doesn't exist](http://flask.pocoo.org/extensions/), developers can write a stand-alone library and bridge that library to Flask by wrapping it in an extension.  
  
-Unlike other frameworks which include an [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping), Flask developers can choose how they want their data to be stored. Flask applications can use existing Python libaries for projects that aren't suited to work with a standard ORM. This makes Flask easier to use with non-relational databases than more tightly integrated frameworks. 
+Unlike other frameworks which include an [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) to query and manipulate data from databases, Flask developers can choose how they want their data to be stored and manipulated. Flask applications can use existing Python libaries like SQLAlchemy, Django ORM, Peewee, PonyORM or SQLObject, for projects that aren't suited to work with a standard ORM. The point is that Flask allows you the flexibility to choose. This makes Flask easier to use with non-relational databases than more tightly integrated frameworks. 
 
-Unlike frameworks which use the *module approach*, Flask utilizes *application dispatching* which isolates the same or different Flask applications from each other in the same Python interpreter process. This is useful for developers who want to use multiple instances of the same application with different configurations, OR ? 
+Unlike frameworks which use the *module approach*, Flask utilizes *application dispatching* which isolates the same or different Flask applications from each other in the same Python interpreter process. This is useful for developers who want to use multiple instances of the same application with different configurations, or who want to pull data from various individual applications and combine them into a different new application. 
 
 <br>
 
